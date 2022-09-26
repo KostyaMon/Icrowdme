@@ -12,6 +12,7 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
 		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
 		<!-- Style -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 
 	</head>
@@ -19,29 +20,93 @@
 		<div class="wrapper">
 			<header class="header">
 				<div class="header__body _container">
-					<a href="#" class="header__logo"></a>
-					<nav class="header__menu menu">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="#" class="menu__link">Lorem ipsum dolor sit amet.</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+						<a href="#" class="header__logo"><img src="./img/logo.png" alt="logo"></a>
+						<nav class="header__menu menu">
+							<div class="menu_wrap">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">HOW IT WORKS</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">DISCOVER A PROJECT</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">BLOG</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">FIND OUT MORE</a></li>
+								</ul>
+								<div class="header__login"><a href="#">Login</a></div>
+							</div>
+						</nav>
+					</div>
 			</header>
 
 			<div class="content">
-				<div class="content__body _container">
-					<p>2 Lorem ipsum dolor sit amet.</p>
+				<div class="content__body">
+
+					<div class="subHeaderSlider swiper">
+						<div class="subHeaderSlider__wrap1 swiper-wrapper">
+
+							<div class="subHeaderSlider__wrap2 swiper-slide">
+								<div class="subHeaderSlider__wrap3 ">
+									<div class="_container">
+										<div class="subHeaderSlider__subWrap">
+											<h1 class="subHeaderSlider__title">Intellectual Property has the Shelf Life<span> of a Banana.</span></h1>
+											<div class="subHeaderSlider__button"><a href="#">Become a Member</a></div>
+										</div>
+										<div class="subHeaderSlider__arrows _container">
+											<div class="subHeaderSlider__arrowPrev"></div>
+											<div class="subHeaderSlider__arrowNext"></div>
+									</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="subHeaderSlider__wrap2 swiper-slide">
+								<div class="subHeaderSlider__wrap3 ">
+									<div class="_container">
+										<div class="subHeaderSlider__subWrap">
+											<h1 class="subHeaderSlider__title">Intellectual Property has the Shelf Life<span> of a Banana.</span></h1>
+											<div class="subHeaderSlider__button"><a href="#">Become a Member</a></div>
+										</div>
+										<div class="subHeaderSlider__arrows _container">
+											<div class="subHeaderSlider__arrowPrev"></div>
+											<div class="subHeaderSlider__arrowNext"></div>
+									</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="ourWork _container">
+						<div class="ourWork__img"><img src="img/icons/icon1.png" alt="icon1.png"></div>
+						<h2 class="ourWork__title">Our work is the presentation of our capabilities.</h2>
+						<p class="ourWork__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+						<p class="ourWork__text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+
+					<div class="ourTab _container">
+						<div class="ourTab__linksWrap">
+							<a href="" class="ourTab__link"><span class="ourTab__num">1</span><span class="ourTab__linkText">Simple</span></a>
+							<a href="" class="ourTab__link"><span class="ourTab__num">2</span><span class="ourTab__linkText">Transparent</span></a>
+							<a href="" class="ourTab__link"><span class="ourTab__num">3</span><span class="ourTab__linkText">Collaborative</span></a>
+						</div >
+						<div class="ourTab__tabWrap">
+							<div class="ourTab__el1"><img class="ourTab__img" src="img/icons/icon2.png" alt="icon2"></div>
+							<div class="ourTab__el2">
+								<h3 class="ourTab__title">Browse projects, like booking a hotel online !</h3>
+								<p class="ourTab__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
 			<footer class="footer">
 				<div class="footer__body _container">
-					<p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, recusandae, soluta. Alias aut, consectetur cupiditate eligendi fuga id impedit ipsam iste numquam odit possimus quaerat quasi quis quos saepe tempora?</p>
+					<p class="footer__copyright">Copyright © 2001 - 2014 author.com</p>
 				</div>
 			</footer>
 		</div>
+		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/jquery-3.6.1.min.js"></script>
 		<script src="js/common.js"></script>
 	</body>

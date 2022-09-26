@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit; }
 
-body {
+html, body {
   font-size: 10px; }
 
 a {
@@ -65,6 +65,7 @@ a {
 .wrapper {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
+  font-weight: 400;
   line-height: 1.2;
   min-height: 100%;
   color: #000;
@@ -78,10 +79,179 @@ a {
   max-width: 1026px;
   margin: 0 auto; }
 
-.header {
+.header .header__body {
   display: flex;
-  align-items: center;
-  min-width: 0; }
+  text-transform: uppercase;
+  padding: 26px 0 22px 0; }
+  .header .header__body .header__logo {
+    flex: 1 1 33%; }
+    .header .header__body .header__logo img {
+      display: inline-flex;
+      padding-right: 20px; }
+  .header .header__body .header__menu {
+    flex: 1 1 67%; }
+    .header .header__body .header__menu .menu_wrap {
+      display: flex;
+      justify-content: space-between; }
+      .header .header__body .header__menu .menu_wrap .menu__list {
+        display: flex;
+        flex-wrap: wrap; }
+      .header .header__body .header__menu .menu_wrap .menu__item {
+        padding-right: 25px; }
+        .header .header__body .header__menu .menu_wrap .menu__item .menu__link {
+          display: inline-flex;
+          padding: 16px 0 11px 0;
+          opacity: 0.67;
+          font-weight: 600;
+          color: #666666; }
+          .header .header__body .header__menu .menu_wrap .menu__item .menu__link:hover {
+            opacity: 1; }
+        .header .header__body .header__menu .menu_wrap .menu__item:last-child {
+          padding-right: 0; }
+      .header .header__body .header__menu .menu_wrap .header__login {
+        padding-left: 20px; }
+        .header .header__body .header__menu .menu_wrap .header__login a {
+          display: inline-flex;
+          background-color: #add136;
+          border-radius: 25px;
+          padding: 13px 30px;
+          opacity: 0.81;
+          font-weight: 600;
+          color: #ffffff; }
+          .header .header__body .header__menu .menu_wrap .header__login a:hover {
+            background-color: #666666; }
 
 .content {
   flex: 1 1 auto; }
+  .content .subHeaderSlider {
+    min-height: 570px; }
+    .content .subHeaderSlider .swiper-wrapper {
+      transition: all 0.5s ease 0s !important; }
+    .content .subHeaderSlider .subHeaderSlider__wrap2 {
+      background: url("../../img/slider_img1.jpg") no-repeat center/cover; }
+    .content .subHeaderSlider .subHeaderSlider__wrap3 {
+      background: rgba(0, 0, 0, 0.29) !important; }
+      .content .subHeaderSlider .subHeaderSlider__wrap3 ._container {
+        padding-right: 10px;
+        padding-left: 10px; }
+    .content .subHeaderSlider .subHeaderSlider__subWrap {
+      padding-top: 155px;
+      max-width: 900px;
+      text-align: center;
+      margin: 0 auto; }
+    .content .subHeaderSlider .subHeaderSlider__title {
+      font-size: 4.8rem;
+      line-height: 6.6rem;
+      font-weight: 600;
+      color: #ffffff; }
+      .content .subHeaderSlider .subHeaderSlider__title span {
+        font-size: 3.5rem;
+        font-weight: 400; }
+    .content .subHeaderSlider .subHeaderSlider__button {
+      margin-top: 40px;
+      margin-bottom: 20px; }
+      .content .subHeaderSlider .subHeaderSlider__button a {
+        display: inline-flex;
+        border-radius: 15px;
+        background-color: #99c50a;
+        padding: 25px 40px;
+        font-size: 1.9rem;
+        font-weight: 600;
+        color: #ffffff; }
+        .content .subHeaderSlider .subHeaderSlider__button a:hover {
+          background-color: #666666; }
+    .content .subHeaderSlider .subHeaderSlider__arrows {
+      margin: 100px 5px 0 5px;
+      padding-bottom: 40px;
+      text-align: right; }
+      .content .subHeaderSlider .subHeaderSlider__arrows .subHeaderSlider__arrowNext {
+        cursor: pointer;
+        border: solid #fff;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 6px;
+        transform: rotate(-45deg); }
+      .content .subHeaderSlider .subHeaderSlider__arrows .subHeaderSlider__arrowPrev {
+        margin-right: 22px;
+        cursor: pointer;
+        border: solid #fff;
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        padding: 6px;
+        transform: rotate(135deg); }
+  .content .ourWork {
+    margin: 95px auto 150px;
+    text-align: center; }
+    .content .ourWork .ourWork__img {
+      margin-bottom: 40px; }
+    .content .ourWork .ourWork__title {
+      margin: 0 auto 60px;
+      max-width: 510px;
+      font-size: 3.1rem;
+      line-height: 5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #515151; }
+    .content .ourWork .ourWork__text {
+      opacity: 0.7;
+      font-size: 1.9rem;
+      color: #515151;
+      margin-bottom: 45px; }
+
+.ourTab {
+  margin: 0 auto 110px; }
+  .ourTab .ourTab__linksWrap {
+    padding-bottom: 60px;
+    display: flex;
+    text-align: center; }
+  .ourTab .ourTab__link {
+    flex: 0 1 33.333%;
+    font-size: 3.3rem;
+    font-weight: 300;
+    color: #656565; }
+    .ourTab .ourTab__link .ourTab__num {
+      align-items: flex-end;
+      display: inline-flex;
+      background-color: #5f5f5f;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #ffffff;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      padding-left: 13.5px;
+      padding-bottom: 6px;
+      position: relative;
+      bottom: 5px; }
+    .ourTab .ourTab__link .ourTab__linkText {
+      padding-left: 25px;
+      display: inline-flex; }
+    .ourTab .ourTab__link:hover .ourTab__num {
+      transition: 0.3s ease 0s;
+      background-color: #add136; }
+  .ourTab .ourTab__tabWrap {
+    margin-top: 64px;
+    display: flex; }
+  .ourTab .ourTab__el1 {
+    flex: 0 1 25%;
+    text-align: center; }
+  .ourTab .ourTab__el2 {
+    flex: 0 1 75%;
+    padding-left: 30px; }
+  .ourTab .ourTab__title {
+    font-size: 2.5rem;
+    color: #add136;
+    margin-bottom: 30px; }
+  .ourTab .ourTab__text {
+    opacity: 0.67;
+    font-size: 1.7rem;
+    color: #606060; }
+
+.footer {
+  border-top: 1px solid #ededed; }
+  .footer .footer__body {
+    min-height: 64px; }
+    .footer .footer__body .footer__copyright {
+      color: #848484;
+      padding: 27px 10px 25px;
+      text-align: center; }
