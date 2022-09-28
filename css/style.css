@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -152,7 +152,7 @@ a {
       margin-bottom: 20px; }
       .content .subHeaderSlider .subHeaderSlider__button a {
         display: inline-flex;
-        border-radius: 15px;
+        border-radius: 10px;
         background-color: #99c50a;
         padding: 25px 40px;
         font-size: 1.9rem;
@@ -203,7 +203,7 @@ a {
   .ourTab .ourTab__linksWrap {
     padding-bottom: 60px;
     display: flex;
-    text-align: center; }
+    border-bottom: 1px solid #e6e6e6; }
   .ourTab .ourTab__link {
     flex: 0 1 33.333%;
     font-size: 3.3rem;
@@ -246,6 +246,102 @@ a {
     opacity: 0.67;
     font-size: 1.7rem;
     color: #606060; }
+
+.find .find__body {
+  display: flex;
+  margin-bottom: 75px; }
+
+.find .find__wrap1 {
+  flex: 0 1 50%;
+  background: #e2f8ff;
+  display: flex; }
+  .find .find__wrap1 .find__button a {
+    background-color: #26a6d1; }
+
+.find .find__wrap2 {
+  flex: 0 1 50%;
+  background: #f5f9eb;
+  display: flex; }
+  .find .find__wrap2 .find__button a {
+    background-color: #add136; }
+
+.find .find__el1 {
+  flex: 0 1 40%;
+  min-height: 300px; }
+  .find .find__el1 .find__img {
+    padding: 84px 15px 0;
+    text-align: center; }
+    .find .find__el1 .find__img img {
+      padding-bottom: 122px;
+      max-width: 100%; }
+
+.find .find__el2 {
+  flex: 0 1 60%;
+  color: #515151;
+  display: flex;
+  flex-direction: column; }
+
+.find .find__title {
+  font-family: Montserrat, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin: 46px 0 16px 0; }
+
+.find .find__text {
+  flex: 1 0 auto;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  margin-bottom: 31px; }
+
+.find .find__button {
+  padding-bottom: 45px; }
+  .find .find__button a {
+    display: inline-flex;
+    padding: 19px 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 10px; }
+    .find .find__button a:hover {
+      background-color: #666666; }
+
+.featuredProjects .featuredProjects__header {
+  display: flex;
+  padding: 0 15px; }
+
+.featuredProjects .featuredProjects__titleWrap {
+  flex: 0 1 70%; }
+
+.featuredProjects .featuredProjects__buttonWrap {
+  flex: 0 1 30%; }
+
+.featuredProjects .featuredProjects__title {
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: #515151;
+  padding-bottom: 25px; }
+
+.featuredProjects .featuredProjects__text {
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  color: #8f8f8f;
+  padding-bottom: 65px; }
+
+.featuredProjects .featuredProjects__button {
+  text-align: right;
+  padding: 30px 0 0 0; }
+  .featuredProjects .featuredProjects__button a {
+    display: inline-flex;
+    background-color: #ffffff;
+    border: 1px solid rgba(81, 81, 81, 0.4);
+    border-radius: 10px;
+    padding: 20px 25px;
+    color: rgba(81, 81, 81, 0.7);
+    font-weight: 600;
+    font-size: 1.5rem; }
+    .featuredProjects .featuredProjects__button a:hover {
+      background: #515151;
+      color: #fff; }
 
 .footer {
   border-top: 1px solid #ededed; }
