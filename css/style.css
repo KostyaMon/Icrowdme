@@ -549,6 +549,12 @@ a {
     color: #494949;
     font-weight: 600; }
 
+.campaigns {
+  text-align: center;
+  margin-bottom: 40px; }
+  .campaigns img {
+    max-width: 100%; }
+
 .footer {
   border-top: 1px solid #ededed; }
   .footer .footer__body {
