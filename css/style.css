@@ -197,18 +197,19 @@ a {
       color: #515151;
       margin-bottom: 45px; }
 
-.ourTab {
+.tabs {
   margin: 0 auto 110px; }
-  .ourTab .ourTab__linksWrap {
+  .tabs .tabs__triggers {
     padding-bottom: 60px;
     display: flex;
     border-bottom: 1px solid #e6e6e6; }
-  .ourTab .ourTab__link {
+  .tabs .tabs__triggers-item {
     flex: 0 1 33.333%;
     font-size: 3.3rem;
     font-weight: 300;
-    color: #656565; }
-    .ourTab .ourTab__link .ourTab__num {
+    color: #656565;
+    text-align: center; }
+    .tabs .tabs__triggers-item .tabs__num {
       align-items: flex-end;
       display: inline-flex;
       background-color: #5f5f5f;
@@ -222,29 +223,38 @@ a {
       padding-bottom: 6px;
       position: relative;
       bottom: 5px; }
-    .ourTab .ourTab__link .ourTab__linkText {
+    .tabs .tabs__triggers-item .tabs__triggers-text {
       padding-left: 25px;
       display: inline-flex; }
-    .ourTab .ourTab__link:hover .ourTab__num {
-      transition: 0.3s ease 0s;
-      background-color: #add136; }
-  .ourTab .ourTab__tabWrap {
+  .tabs .tabs__triggers-item_active .tabs__num, .tabs .tabs__triggers-item:hover .tabs__num {
+    transition: 0.3s ease 0s;
+    background-color: #add136; }
+  .tabs .tabs__content-item {
     margin-top: 64px;
+    display: none; }
+  .tabs .tabs__content-item_active {
     display: flex; }
-  .ourTab .ourTab__el1 {
+  .tabs .tabs__el1 {
     flex: 0 1 25%;
-    text-align: center; }
-  .ourTab .ourTab__el2 {
+    text-align: center;
+    padding-top: 30px; }
+    .tabs .tabs__el1 .tabs__img {
+      max-width: 113px;
+      min-height: 102px;
+      object-fit: cover; }
+  .tabs .tabs__el2 {
     flex: 0 1 75%;
     padding-left: 30px; }
-  .ourTab .ourTab__title {
+  .tabs .tabs__title {
     font-size: 2.5rem;
     color: #add136;
-    margin-bottom: 30px; }
-  .ourTab .ourTab__text {
+    margin-bottom: 20px;
+    line-height: 1.4; }
+  .tabs .tabs__text {
     opacity: 0.67;
     font-size: 1.7rem;
-    color: #606060; }
+    color: #606060;
+    line-height: 1.6; }
 
 .find .find__body {
   display: flex;
