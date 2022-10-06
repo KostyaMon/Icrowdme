@@ -20,3 +20,14 @@ $(document).ready(function () {
 	$('.tabs__triggers-item:first').click();
 	//===
 });
+
+// Menu Burger
+const iconMenu = document.querySelector(".menu__icon");
+const menuBody = document.querySelector(".menu__body");
+if (iconMenu) {
+	iconMenu.addEventListener("click", function () {
+		document.body.classList.toggle("_lock");
+		iconMenu.classList.toggle("_menuActive");
+		menuBody.classList.toggle("_menuActive");
+	})
+}
