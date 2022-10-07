@@ -1,8 +1,10 @@
 new Swiper('.swiper', {
 	navigation: {
-		nextEl: '.subHeaderSlider__arrowNext',
-		prevEl: '.subHeaderSlider__arrowPrev'
+		nextEl: '.arrowNext',
+		prevEl: '.arrowPrev'
 	},
+	simulateTouch: true,
+	autoHeight: true
 });
 
 $(document).ready(function () {
@@ -30,4 +32,33 @@ if (iconMenu) {
 		iconMenu.classList.toggle("_menuActive");
 		menuBody.classList.toggle("_menuActive");
 	})
+}
+
+// Smooth Scroll
+const menuLinks = document.querySelectorAll(".menu__link[data-goto]")
+
+if(menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener("click", onMenuLinkClick)
+	});
+
+	function onMenuLinkClick(e) {
+		const menuLink = e.target;
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+			if (iconMenu.classList.contains("_menuActive")) {
+				document.body.classList.remove("_lock");
+				iconMenu.classList.remove("_menuActive");
+				menuBody.classList.remove("_menuActive");
+			}
+			
+			e.preventDefault();
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: "smooth"
+			});
+		}
+	}
 }
