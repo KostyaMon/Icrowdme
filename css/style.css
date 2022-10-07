@@ -137,7 +137,6 @@ a {
   .header .header__body {
     justify-content: space-between; }
   .header .header__logo {
-    margin-left: 60px;
     flex-basis: auto;
     z-index: 103;
     order: 2;
@@ -149,7 +148,7 @@ a {
       padding: 0;
       transform: translate(0px, -50%); }
   .header .header__menu {
-    flex-basis: auto;
+    flex: 0 1 11%;
     order: 1; }
   .header .menu__icon {
     margin-top: 13px;
@@ -181,7 +180,7 @@ a {
       top: 6px;
       transform: rotate(-45deg); }
     .header .menu__icon._menuActive::after {
-      bottom: 9px;
+      bottom: 8px;
       transform: rotate(45deg); }
   .header .menu__body {
     position: fixed;
@@ -224,6 +223,13 @@ a {
     z-index: 103;
     order: 3;
     padding: 0; } }
+
+@media (max-width: 480px) {
+  .header .header__logo img {
+    max-width: 120px; }
+  .header .header__login a {
+    padding: 13px 20px;
+    font-size: 1.2rem; } }
 
 .content {
   flex: 1 1 auto; }
