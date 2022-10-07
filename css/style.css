@@ -264,7 +264,7 @@ a {
         padding: 6px;
         transform: rotate(135deg); }
     .content .subHeaderSlider .subHeaderSlider__bg {
-      background: url("../../img/slider_img1.jpg") no-repeat center/cover;
+      background: no-repeat center/cover;
       min-height: 570px;
       position: relative; }
       .content .subHeaderSlider .subHeaderSlider__bg::before {
@@ -852,11 +852,16 @@ a {
     .content .community .comments .comments__comment {
       padding-bottom: 35px;
       flex-basis: 100%; } }
-  .content .campaigns {
-    text-align: center;
-    margin-bottom: 40px; }
-    .content .campaigns img {
-      max-width: 100%; }
+  .content .campaigns .campaigns__row {
+    margin: -25px -10px 40px -10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .content .campaigns .campaigns__row img {
+      max-width: 100%;
+      max-height: 37px;
+      padding: 0 25px 0;
+      margin-top: 25px; }
 
 .footer {
   border-top: 1px solid #ededed; }
