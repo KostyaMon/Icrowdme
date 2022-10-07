@@ -767,7 +767,7 @@ a {
   .content .community .community__body {
     padding: 190px 15px 0 15px;
     min-height: 670px;
-    background: #fff url("/img/bg.jpg") no-repeat center/cover; }
+    background: #fff url("../img/bg.jpg") no-repeat center/cover; }
   .content .community ._container {
     max-width: 950px; }
   .content .community .community__bePart {
