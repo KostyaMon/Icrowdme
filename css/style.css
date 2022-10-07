@@ -378,7 +378,8 @@ a {
       display: flex;
       margin-bottom: -1px;
       padding-right: 25px;
-      padding-bottom: 35px; }
+      padding-bottom: 35px;
+      transition: none; }
       .content .tabs .tabs__triggers-item:active, .content .tabs .tabs__triggers-item:visited {
         color: #656565; }
     .content .tabs .tabs__numWrap {
@@ -767,7 +768,7 @@ a {
   .content .community .community__body {
     padding: 190px 15px 0 15px;
     min-height: 670px;
-    background: #fff url("../img/bg.jpg") no-repeat center/cover; }
+    background: #fff url("/img/bg.jpg") no-repeat center/cover; }
   .content .community ._container {
     max-width: 950px; }
   .content .community .community__bePart {
