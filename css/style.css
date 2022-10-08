@@ -153,6 +153,7 @@ a {
     flex: 0 1 11%;
     order: 1; }
   .header .menu__icon {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     margin-top: 13px;
     position: relative;
     z-index: 103;
