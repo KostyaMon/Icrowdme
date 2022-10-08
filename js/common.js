@@ -1,11 +1,11 @@
 new Swiper('.swiper', {
+	// loop: true,
 	navigation: {
 		nextEl: '.arrowNext',
 		prevEl: '.arrowPrev'
 	},
 	simulateTouch: true,
-	autoHeight: true,
-	loop: true
+	autoHeight: true
 });
 
 $(document).ready(function () {
