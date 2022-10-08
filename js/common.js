@@ -4,7 +4,8 @@ new Swiper('.swiper', {
 		prevEl: '.arrowPrev'
 	},
 	simulateTouch: true,
-	autoHeight: true
+	autoHeight: true,
+	loop: true
 });
 
 $(document).ready(function () {
