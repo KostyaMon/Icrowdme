@@ -1,5 +1,10 @@
 new Swiper('.swiper', {
-	// loop: true,
+	watchOverflow: true,
+	slidesPerColumn: 1,
+	centeredSliders: false,
+	initialSlide: 0,
+	slidesPerGroup: 1,
+	loop: true,
 	navigation: {
 		nextEl: '.arrowNext',
 		prevEl: '.arrowPrev'

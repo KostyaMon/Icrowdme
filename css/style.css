@@ -66,6 +66,7 @@ a {
   transition: all 0.3s ease 0s; }
 
 .wrapper {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
@@ -236,14 +237,15 @@ a {
 
 .content {
   flex: 1 1 auto; }
+  .content .swiper * {
+    min-width: 0; }
   .content .subHeaderSlider {
     position: relative;
     margin-top: 91px;
     min-width: 0; }
-    .content .subHeaderSlider .swiper-wrapper {
-      transition: all 0.5s ease 0s !important; }
     .content .subHeaderSlider .subHeaderSlider__arrows {
-      position: relative; }
+      position: relative;
+      user-select: none; }
     .content .subHeaderSlider .arrows__body {
       position: absolute;
       right: 20px;
